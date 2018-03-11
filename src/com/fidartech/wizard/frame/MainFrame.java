@@ -370,6 +370,10 @@ public class MainFrame extends javax.swing.JFrame {
         File dirLib = new File(txtOutput.getText() + "/lib");
         dirLib.mkdir();
         System.out.println("lib folder created.");
+        // creating backup directory
+        File dirBackup = new File(txtOutput.getText() + "/backup");
+        dirBackup.mkdir();
+        System.out.println("backup folder created.");
         /***********************************************************************
          *                          Create XML file                            *
          ***********************************************************************/
